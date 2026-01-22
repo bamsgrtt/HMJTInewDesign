@@ -5,6 +5,7 @@
     --accent-1: #00D3F3;
     --accent-2: #51A2FF;
     --accent-3: #C27AFF;
+    --yellow-icon: #EFF300;
 }
 
 .hero-container {
@@ -95,7 +96,6 @@
     padding: 20px;
     
     /* Tambahkan ini: Pastikan semua teks di dalam content rata kiri */
-    text-align: left; 
     
     /* Tambahkan margin kiri agar konten tidak menempel persis di pinggir layar */
     margin-left: 5vw; 
@@ -106,18 +106,19 @@
 
 .periode {
     /* Properti posisi periode tetap sama, dia akan relatif terhadap sudut kiri content */
-    position: absolute;
     top: 80px;
     left: 20px;
     font-size: 0.8rem;
     border: #ffffff 1px solid;
     background: #ffffff1d;
     height: 30px;
-    width: 100px;
+    width: 120px;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    padding-left: 10px; /* Tambah padding agar teks tidak menempel border */
+    padding-left: 10px; /* Tambah padding agar teks tidak menempel border 
+    */
+    margin-bottom: 20px;
 }
 
 .periode p {
@@ -125,11 +126,13 @@
     color: white;
 }
 
+.periode i {
+    margin-right: 5px;
+    color: var(--yellow-icon);
+}
+
 .title {
-    position: absolute;
-    top: 140px;
-    left: 20px;
-    font-size: 60px;
+    font-size: 48px;
 }
 
 .title h1 {
@@ -143,24 +146,111 @@
 }
 
 .lead {
-    position: absolute;
-    bottom: 150px;
-    left: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .button-group {
-    position: absolute;
-    bottom: 80px;
-    left: 20px;
-    background-color: #fff !important;
     border-radius: 10px;
 }
 
 .button-group .btn {
-    margin-right: 10px;
-    padding: 0 20px;
     text-align: center;
     text-decoration: none;
+}
+
+/* About Section */
+.about .periode {
+    border: #BEDBFF 1px solid;
+    background: #EFF6FF;
+    padding: 10px;
+    width: 140px;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.about .periode p {
+    color: var(--color-1);
+}
+
+.about .periode i {
+    margin-right: 5px;
+    color: var(--color-1);
+}
+
+.text-decoration li::marker {
+    color: var(--color-1); /* Menggunakan warna biru dari root Anda */
+    font-size: 1.2em;      /* Opsional: memperbesar ukuran bullet */
+}
+
+.about .row .col-12 p {
+    font-size: 14px; /* Atur ukuran font sesuai kebutuhan */ /* Atur jarak antar baris untuk keterbacaan */
+}
+
+
+/* About Section */
+.pengurus .periode {
+    border: #BEDBFF 1px solid;
+    background: #EFF6FF;
+    padding: 10px;
+    width: 160px;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.pengurus .periode p {
+    color: var(--color-1);
+}
+
+.pengurus .periode i {
+    margin-right: 5px;
+    color: var(--color-1);
+}
+
+
+.pengurus .row .col-md-3 h5,.pengurus .row .col-md-3 p, .pengurus .row .col-md-3 i {
+    font-size: 14px; /* Atur ukuran font sesuai kebutuhan */ /* Atur jarak antar baris untuk keterbacaan */
+}
+
+.img-gradient-container {
+    line-height: 0; /* Menghilangkan gap kecil di bawah gambar */
+}
+
+.custom-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Mengatur seberapa tinggi lapisan biru (dari tengah ke bawah) */
+    background: linear-gradient(to top, 
+                rgba(45, 80, 186, 0.3) 0%, 
+                transparent 100%);           
+    pointer-events: none; /* Agar klik tetap tembus ke gambar jika perlu */
+}
+
+/* 1. Kontainer Kartu Utama (Harus diubah agar positioning berfungsi) */
+.border.rounded-4.shadow-sm {
+    position: relative; /* Kunci: Menjadi referensi posisi untuk 'accent' */
+    overflow: hidden;   /* Kunci: Memastikan bentuk lingkaran terpotong rapi di sudut */
+}
+
+/* 2. Styling untuk Elemen 'accent' */
+.accent {
+    position: absolute; /* Kunci: Memposisikan elemen secara spesifik */
+    top: 0;             /* Menempel di bagian atas */
+    right: 0;           /* Menempel di bagian kanan */
+    width: 120px;       /* Ukuran bentuk horizontal */
+    height: 100px;      /* Ukuran bentuk vertikal */
+    background-color: #E0F2FE; /* Warna biru muda cerah (sesuaikan jika perlu) */
+    border-radius: 0 0 0 100%; /* Kunci: Hanya membulatkan sudut kiri bawah elemen ini */
+    z-index: 0;         /* Pastikan bentuk ini di LAPISAN BELAKANG */
+}
+
+/* 3. Pastikan konten utama berada di depan */
+/* Tambahkan kelas content-wrapper di sekitar semua teks dan ikon Anda di HTML */
+.content-wrapper {
+    position: relative;
+    z-index: 1; 
 }

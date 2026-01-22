@@ -1,71 +1,388 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">HMJTI</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tentang</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Organisasi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Program</a>
-        </li>
-        <li class="nav-item h-auto">
-          <a class="btn btn-primary" href="#">Kontak</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<section class="hero-container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">HMJTI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Organisasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Program</a>
+          </li>
+          <li class="nav-item h-auto">
+            <a class="btn btn-primary" href="#">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-container">
     <div class="layer-image"></div>
     <div class="layer layer-1"></div>
     <div class="layer layer-2"></div>
     <div class="layer layer-3"></div>
     <div class="content">
-        <div class="periode">
-            <p>Periode 2026</p>
-        </div>
+      <div class="periode">
+        <p><i class="bi bi-stars"></i>Periode 2026</p>
+      </div>
 
-        <h1 class="title fw-bold">Himpunan Mahasiswa <br>
-            <span>Jurusan Teknologi <br> Informasi</span><h1>
+      <h1 class="title fw-bold">Himpunan Mahasiswa
+        <span>Jurusan Teknologi <br> Informasi</span>
+        <h1>
 
-        <p class="lead">Politeknik Negeri Jember - Wadah aspirasi dan <br> kreativitas mahasiswa dalam mengembangkan potensi <br> di bidang teknologi informasi.</p>
+          <p class="lead">Politeknik Negeri Jember - Wadah aspirasi dan <br> kreativitas mahasiswa dalam mengembangkan
+            potensi <br> di bidang teknologi informasi.</p>
 
-        <div class="button-group d-inline-flex align-items-center gap-2">
-    <a href="#" class="btn btn-link text-primary p-2">
-        Tentang Kami
-        <i class="bi bi-arrow-right text-primary fs-5"></i>
-    </a>
-</div>
+          <div class="button-group d-inline-flex align-items-center">
+            <a href="#" class="btn btn-link bg-light text-primary">
+              Tentang Kami
+              <i class="bi bi-arrow-right text-primary fs-5"></i>
+            </a>
+          </div>
 
+          <hr>
+
+          <div class="row text-center justify-content-start align-items-center g-3">
+            <div class="col-12 col-md-4">
+              <div class="display-1 fw-bold fs-3 pt-2">200+</div>
+              <p class="fs-6">Anggota aktif</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="display-1 fw-bold fs-3 pt-2">50+</div>
+              <p class="fs-6">Program Kerja</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="display-1 fw-bold fs-3 pt-2">15+</div>
+              <p class="fs-6">Prestasi</p>
+            </div>
+          </div>
     </div>
-</section>
+  </section>
+
+  <div class="container-fluid about py-5 bg-light">
+    <div class="periode">
+      <p class="fw-bold"><i class="bi bi-stars"></i>TENTANG KAMI</p>
+    </div>
+    <h1 class="text-center fw-bold">Mengenal HMJTI Polije</h1>
+    <p class="text-center">Organisasi mahasiswa yang berdedikasi untuk mengembangkan kompetensi dan kreativitas <br>di
+      bidang teknologi informasi</p>
+    <div class="row align-items-stretch"> <!-- Tambahkan stretch agar row memaksa kolom sama tinggi -->
 
 
+      <!-- Kolom VISI -->
+      <div class="col-md-6 mb-4">
+        <div class="border text-left rounded-4 shadow-sm h-100"> <!-- TAMBAHKAN h-100 DI SINI -->
+          <div class="m-5">
+            <i class="bi bi-eye border bg-primary text-white rounded-4 py-3 px-3 fw-4 mb-3"></i>
+            <h4 class="pt-4">VISI</h4>
+            <p style="font-size: 14px;">
+              Menjadi organisasi mahasiswa yang unggul, inovatif, dan berperan aktif dalam
+              <br>pengembangan teknologi informasi serta membentuk mahasiswa yang <br>profesional, berintegritas, dan
+              berwawasan global.
+            </p>
+          </div>
+        </div>
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+      <!-- Kolom MISI -->
+      <div class="col-md-6 mb-4">
+        <div class="border text-left rounded-4 shadow-sm h-100"> <!-- TAMBAHKAN h-100 DI SINI -->
+          <div class="m-5 mb-0">
+            <i class="bi bi-bullseye border bg-primary text-white rounded-4 py-3 px-3 fw-4 mb-3"></i>
+            <h3 class="pt-4">MISI</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-2">
+                <i class="bi bi-circle-fill text-primary me-2 mt-2" style="font-size: 0.4rem;"></i>
+                <span style="font-size: 14px;">Meningkatkan kualitas dan kompetensi mahasiswa dalam bidang teknologi
+                  informasi</span>
+              </li>
+              <li class="d-flex align-items-start mb-2">
+                <i class="bi bi-circle-fill text-primary me-2 mt-2" style="font-size: 0.4rem;"></i>
+                <span style="font-size: 14px;">Membentuk karakter mahasiswa yang profesional, berintegritas, dan
+                  berwawasan global</span>
+              </li>
+              <li class="d-flex align-items-start">
+                <i class="bi bi-circle-fill text-primary me-2 mt-2" style="font-size: 0.4rem;"></i>
+                <span style="font-size: 14px;">Mengembangkan program kerja yang inovatif dan berdampak positif bagi
+                  masyarakat</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="border border-primary-subtle p-2 p-md-3 text-left rounded-4 shadow-sm w-100"
+          style="background: #EFF6FF;">
+          <div class="d-flex align-items-center mb-4">
+            <i class="bi bi-book bg-primary text-white rounded-4 py-3 px-3 me-3 shadow-sm"></i>
+            <h3 class="fw-bold m-0">Sejarah</h3>
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="fs-6 text-secondary">
+            <p class="text-dark">Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJTI) Politeknik Negeri Jember
+              didirikan sebagai wadah bagi mahasiswa untuk mengembangkan potensi akademik dan non-akademik di bidang
+              teknologi informasi.</p>
+
+            <p class="text-dark">Sejak berdiri, HMJTI telah aktif menyelenggarakan berbagai kegiatan seperti seminar
+              teknologi, workshop pengembangan skill, kompetisi pemrograman, dan kegiatan sosial kemasyarakatan.
+              Organisasi ini berkomitmen untuk menjadi jembatan antara mahasiswa dengan dunia industri teknologi
+              informasi.</p>
+
+            <p class="text-dark">Dengan semangat kolaborasi dan inovasi, HMJTI terus berkembang dan beradaptasi dengan
+              perkembangan teknologi terkini, mempersiapkan mahasiswa untuk menjadi profesional yang kompeten dan siap
+              menghadapi tantangan era digital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid  pengurus bg-white py-5">
+    <div class="periode">
+      <p class="fw-bold"><i class="bi bi-stars"></i>Struktur Organisasi</p>
+    </div>
+    <h1 class="text-center fw-bold">Kepengurusan HMJTI Polije</h1>
+    <p class="text-center">Tim solid yang berkomitmen untuk memajukan organisasi dan mengembangkan potensi mahasiswa</p>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="border rounded-4 shadow-sm mb-4 overflow-hidden">
+          <!-- Kontainer Gambar dengan Overlay -->
+          <div class="position-relative img-gradient-container">
+            <img src="image/Juliana_INtan_Purwaningtyas_BPH.png" class="img-fluid" alt="Pengurus 1">
+            <!-- Lapisan Overlay -->
+            <div class="custom-overlay"></div>
+          </div>
+
+          <div class="p-3 text-left">
+            <h5 class="fw-bold mb-1">Juliana Intan Purwaningtyas</h5>
+            <p class="text-primary fw-bold mb-0">Ketua Umum</p>
+            <i class="text-secondary" style="font-size: 0.85rem;">"Berkolaborasi untuk kemajuan bersama"</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="border rounded-4 shadow-sm mb-4">
+          <div class="position-relative img-gradient-container">
+            <img src="image/ACH._Humaidi_Aidil_Kamal_BPH.png" class="img-fluid" alt="Pengurus 1">
+            <!-- Lapisan Overlay -->
+            <div class="custom-overlay"></div>
+          </div>
+          <div class="p-3 text-left">
+            <h5 class="fw-bold mb-1">ACH.Humaidi Aidil Kamal</h5>
+            <p class="text-primary fw-bold mb-0">Wakil Ketua</p>
+            <i class="text-secondary">"Berkolaborasi untuk kemajuan bersama"</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border rounded-4 shadow-sm mb-4">
+          <div class="position-relative img-gradient-container">
+            <img src="image/Alya_Rachma_Kamila_BPH.png" class="img-fluid" alt="Pengurus 1">
+            <!-- Lapisan Overlay -->
+            <div class="custom-overlay"></div>
+          </div>
+          <div class="p-3 text-left">
+            <h5 class="fw-bold mb-1">Alya Rachma Kamila</h5>
+            <p class="text-primary fw-bold mb-0">Sekretaris</p>
+            <i class="text-secondary">"Dokumentasi adalah kunci transparansi"</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border rounded-4 shadow-sm mb-4">
+          <div class="position-relative img-gradient-container">
+            <img src="image/Juliana_INtan_Purwaningtyas_BPH.png" class="img-fluid" alt="Pengurus 1">
+            <!-- Lapisan Overlay -->
+            <div class="custom-overlay"></div>
+          </div>
+          <div class="p-3 text-left">
+            <h5 class="fw-bold mb-1">Agnees Serlita Anggun</h5>
+            <p class="text-primary fw-bold mb-0">Bendahara</p>
+            <i class="text-secondary">"Mengelola keuangan dengan transparan"</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-3 text-center">
+      <h3 class="fw-bold">Departemen Kami</h3>
+      <p>Setiap departemen memiliki peran penting dalam menjalankan roda organisasi</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-people-fill bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Badan Pengurus Harian</h5>
+            <p class="mb-0" style="font-size: 14px;">Mengelola dan mengkoordinasi kegiatan internal organisasi serta kesejahteraan anggota</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Kaderisasi</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Kesejahteraan Anggota</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Koordinasi Internal</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Administrasi -->
+     <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-file-earmark-text bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Administrasi</h5>
+            <p class="mb-0" style="font-size: 14px;">Mengelola administrasi, dokumentasi, dan arsip organisasi dengan sistem yang terstruktur</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Dokumentasi</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Kearsipan</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Surat Menyurat</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Keilmuan -->
+     <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-shield bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Keilmuan</h5>
+            <p class="mb-0" style="font-size: 14px;">Pengembangan Sumber Daya Mahasiswa melalui pelatihan dan pengembangan kompetensi</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Workshop</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Training</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Mentoring</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Perhubungan -->
+     <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-broadcast bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Perhubungan</h5>
+            <p class="mb-0" style="font-size: 14px;">Membangun dan menjalin hubungan baik dengan organisasi eksternal, alumni, dan stakeholder</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Networking</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Relasi Alumni</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Patnership</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Kominfo -->
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-megaphone bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kominfo</h5>
+            <p class="mb-0" style="font-size: 14px;">Mengelola komunikasi dan informasi melalui media sosial, website, dan publikasi organisasi</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Media Sosial</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Desain Grafis</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Publikasi</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Kewirausahan -->
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent"></div>
+          <div class="content-wrapper">
+          <div class="pt-3">
+            <i class="bi bi-graph-up-arrow bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+          </div>
+          <div class="p-3 text-left mt-2" >
+            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kewirausahan</h5>
+            <p class="mb-0" style="font-size: 14px;">Mengembangkan jiwa entrepreneurship dan mengelola unit usaha untuk kemandirian organisasi</p>
+          </div>
+          <div class="d-flex gap-1">
+    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Bussines Development</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Event Organizer</div>
+    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Sponsorship</div>
+</div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
