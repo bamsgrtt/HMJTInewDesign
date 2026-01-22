@@ -15,27 +15,30 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">HMJTI</a>
+      <div class="navbar-brand py-0 d-flex flex-column align-items-start">
+      <a class="fw-bold text-dark text-decoration-none mb-0 pb-0" href="#">HMJTI</a>
+      <p style="font-size: 14px;" class="m-0 mt-0">Polije 2026</p>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link active text-dark" aria-current="page" href="#">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang</a>
+            <a class="nav-link text-dark" href="#">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Organisasi</a>
+            <a class="nav-link text-dark" href="#">Organisasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Program</a>
+            <a class="nav-link text-dark" href="#">Program</a>
           </li>
           <li class="nav-item h-auto">
-            <a class="btn btn-primary" href="#">Kontak</a>
+            <a class="btn btn-primary rounded-3" href="#">Kontak</a>
           </li>
         </ul>
       </div>
@@ -85,6 +88,7 @@
     </div>
   </section>
 
+  <!-- About -->
   <div class="container-fluid about py-5 bg-light">
     <div class="periode">
       <p class="fw-bold"><i class="bi bi-stars"></i>TENTANG KAMI</p>
@@ -167,7 +171,8 @@
   </div>
   </div>
 
-  <div class="container-fluid  pengurus bg-white py-5">
+  <!-- Pengurus -->
+  <div class="container-fluid  pengurus bg-white py-2">
     <div class="periode">
       <p class="fw-bold"><i class="bi bi-stars"></i>Struktur Organisasi</p>
     </div>
@@ -245,138 +250,335 @@
         <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
           <div class="accent"></div>
           <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-people-fill bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="pt-3">
+              <i class="bi bi-people-fill bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Badan Pengurus Harian</h5>
+              <p class="mb-0" style="font-size: 14px;">Mengelola dan mengkoordinasi kegiatan internal organisasi serta
+                kesejahteraan anggota</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Kaderisasi</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Kesejahteraan Anggota</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Koordinasi Internal</div>
+            </div>
           </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Badan Pengurus Harian</h5>
-            <p class="mb-0" style="font-size: 14px;">Mengelola dan mengkoordinasi kegiatan internal organisasi serta kesejahteraan anggota</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Kaderisasi</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Kesejahteraan Anggota</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Koordinasi Internal</div>
-</div>
-  </div>
 
+        </div>
       </div>
-    </div>
 
-    <!-- Administrasi -->
-     <div class="col-md-4">
-        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
-          <div class="accent"></div>
-          <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-file-earmark-text bg-primary text-light text-center py-3 px-3 rounded-4"></i>
-          </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Administrasi</h5>
-            <p class="mb-0" style="font-size: 14px;">Mengelola administrasi, dokumentasi, dan arsip organisasi dengan sistem yang terstruktur</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Dokumentasi</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Kearsipan</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Surat Menyurat</div>
-</div>
-  </div>
-
-      </div>
-    </div>
-
-    <!-- Keilmuan -->
-     <div class="col-md-4">
-        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
-          <div class="accent"></div>
-          <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-shield bg-primary text-light text-center py-3 px-3 rounded-4"></i>
-          </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Keilmuan</h5>
-            <p class="mb-0" style="font-size: 14px;">Pengembangan Sumber Daya Mahasiswa melalui pelatihan dan pengembangan kompetensi</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Workshop</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Training</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Mentoring</div>
-</div>
-  </div>
-
-      </div>
-    </div>
-
-    <!-- Perhubungan -->
-     <div class="col-md-4">
-        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
-          <div class="accent"></div>
-          <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-broadcast bg-primary text-light text-center py-3 px-3 rounded-4"></i>
-          </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Perhubungan</h5>
-            <p class="mb-0" style="font-size: 14px;">Membangun dan menjalin hubungan baik dengan organisasi eksternal, alumni, dan stakeholder</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Networking</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Relasi Alumni</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Patnership</div>
-</div>
-  </div>
-
-      </div>
-    </div>
-
-    <!-- Kominfo -->
+      <!-- Administrasi -->
       <div class="col-md-4">
         <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
-          <div class="accent"></div>
+          <div class="accent-2"></div>
           <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-megaphone bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="pt-3">
+              <i class="bi bi-file-earmark-text text-light text-center py-3 px-3 rounded-4"
+                style="background: #ff3300;"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Administrasi</h5>
+              <p class="mb-0" style="font-size: 14px;">Mengelola administrasi, dokumentasi, dan arsip organisasi dengan
+                sistem yang terstruktur</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Dokumentasi</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Kearsipan</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Surat
+                Menyurat</div>
+            </div>
           </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kominfo</h5>
-            <p class="mb-0" style="font-size: 14px;">Mengelola komunikasi dan informasi melalui media sosial, website, dan publikasi organisasi</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Media Sosial</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Desain Grafis</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Publikasi</div>
-</div>
-  </div>
 
+        </div>
       </div>
-    </div>
 
-    <!-- Kewirausahan -->
+      <!-- Keilmuan -->
       <div class="col-md-4">
         <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
-          <div class="accent"></div>
+          <div class="accent-3"></div>
           <div class="content-wrapper">
-          <div class="pt-3">
-            <i class="bi bi-graph-up-arrow bg-primary text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="pt-3">
+              <i class="bi bi-shield bg-success text-light text-center py-3 px-3 rounded-4"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Keilmuan</h5>
+              <p class="mb-0" style="font-size: 14px;">Pengembangan Sumber Daya Mahasiswa melalui pelatihan dan
+                pengembangan kompetensi</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Workshop</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Training</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Mentoring</div>
+            </div>
           </div>
-          <div class="p-3 text-left mt-2" >
-            <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kewirausahan</h5>
-            <p class="mb-0" style="font-size: 14px;">Mengembangkan jiwa entrepreneurship dan mengelola unit usaha untuk kemandirian organisasi</p>
-          </div>
-          <div class="d-flex gap-1">
-    <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
-    <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Bussines Development</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Event Organizer</div>
-    <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Sponsorship</div>
-</div>
-  </div>
 
+        </div>
+      </div>
+
+      <!-- Perhubungan -->
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent-4"></div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+              <i class="bi bi-broadcast text-light text-center py-3 px-3 rounded-4" style="background: #9000ff;"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Perhubungan</h5>
+              <p class="mb-0" style="font-size: 14px;">Membangun dan menjalin hubungan baik dengan organisasi eksternal,
+                alumni, dan stakeholder</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Networking</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Relasi
+                Alumni</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Patnership</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Kominfo -->
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent-5"></div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+              <i class="bi bi-megaphone text-light text-center py-3 px-3 rounded-4" style="background: #ff00ee;"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kominfo</h5>
+              <p class="mb-0" style="font-size: 14px;">Mengelola komunikasi dan informasi melalui media sosial, website,
+                dan publikasi organisasi</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">Media
+                Sosial</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Desain
+                Grafis</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Publikasi</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Kewirausahan -->
+      <div class="col-md-4">
+        <div class="border rounded-4 shadow-sm mb-4 p-3 text-left">
+          <div class="accent-6"></div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+              <i class="bi bi-graph-up-arrow bg-info text-light text-center py-3 px-3 rounded-4"></i>
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Departemen Kewirausahan</h5>
+              <p class="mb-0" style="font-size: 14px;">Mengembangkan jiwa entrepreneurship dan mengelola unit usaha
+                untuk kemandirian organisasi</p>
+            </div>
+            <div class="d-flex gap-1">
+              <!-- Menambahkan py-1 untuk padding vertikal dan bg-light untuk warna latar -->
+              <div class="border bg-light rounded-pill shadow-sm  px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Bussines Development</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">Event
+                Organizer</div>
+              <div class="border bg-light rounded-pill shadow-sm px-2 py-1 text-nowrap" style="font-size: 14px;">
+                Sponsorship</div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- Program -->
+  <div class="container-fluid program py-2 bg-light">
+    <div class="periode">
+      <p class="fw-bold"><i class="bi bi-stars"></i>Program & Kegiatan</p>
+    </div>
+    <div class="text-center">
+      <h1 class="fw-bold">Porgram Unggulan Kami</h1>
+      <p>Berbagai program dan kegiatan yang dirancang untuk mengembangkan kompetensi dan <br>kreativitas mahasiswa</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="border rounded-3 shadow-sm mb-4 text-left">
+          <div class="img-wrapper position-relative d-inline-block">
+            <img src="image/gedung.jpg" class="img-fluid rounded-3">
+            <i
+              class="bi bi-mortarboard bg-primary text-light text-center py-3 px-3 rounded-4 position-absolute top-0 end-0 m-3"></i>
+            <div class="border bg-white rounded-3 position-absolute bottom-0 start-0 m-2"
+              style="padding: 2px; font-size: 14px;">Workshop & Seminar</div>
+          </div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Techtalk Series</h5>
+              <p class="mb-0" style="font-size: 14px;">Seri seminar dan workshop dengan pembicara dari industri
+                teknologi untuk memperluas wawasan mahasiswa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="border rounded-3 shadow-sm mb-4 text-left">
+          <div class="img-wrapper position-relative d-inline-block">
+            <img src="image/gedung.jpg" class="img-fluid rounded-3">
+            <i style="background: #9000ff;"
+              class="bi bi-trophy text-light text-center py-3 px-3 rounded-4 position-absolute top-0 end-0 m-3"></i>
+            <div class="border bg-white rounded-3 position-absolute bottom-0 start-0 m-2"
+              style="padding: 2px; font-size: 14px;">Kompetisi</div>
+          </div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Polije Code Competition</h5>
+              <p class="mb-0" style="font-size: 14px;">Kompetisi pemrograman tahunan untuk mengasah kemampuan problem
+                solving dan algoritma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="border rounded-3 shadow-sm mb-4 text-left">
+          <div class="img-wrapper position-relative d-inline-block">
+            <img src="image/gedung.jpg" class="img-fluid rounded-3">
+            <i
+              class="bi bi-heart bg-success text-light text-center py-3 px-3 rounded-4 position-absolute top-0 end-0 m-3"></i>
+            <div class="border bg-white rounded-3 position-absolute bottom-0 start-0 m-2"
+              style="padding: 2px; font-size: 14px;">Pengabdian Masyarakat</div>
+          </div>
+          <div class="content-wrapper">
+            <div class="pt-3">
+
+            </div>
+            <div class="p-3 text-left mt-2">
+              <h5 class="fw-bold mb-1" style="font-size: 14px;">Tech for Society</h5>
+              <p class="mb-0" style="font-size: 14px;">Program pengabdian masyarakat dengan memanfaatkan teknologi untuk
+                membantu masyarakat sekitar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid py-5">
+    <div style="background: linear-gradient(#155DFC, #193CB8);" class="container-fluid h-50 rounded-4 shadow-sm p-2">
+      <div class="row justify-content-center align-items-center text-center py-4">
+        <div class="col-md-3">
+          <div class="text-center pt-4">
+            <i style="background: #ffffff3f;" class="bi bi-code bg-opacity-50 text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="display-1 fw-bold fs-5 text-light mt-4">50+</div>
+            <p class="text-light">Program Kerja</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center pt-4">
+            <i style="background: #ffffff3f;" class="bi bi-trophy bg-opacity-50 text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="display-1 fw-bold fs-5 text-light mt-4">15+</div>
+            <p class="text-light">Prestasi</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center pt-4">
+            <i style="background: #ffffff3f;" class="bi bi-lightbulb bg-opacity-50 text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="display-1 fw-bold fs-5 text-light mt-4">200+</div>
+            <p class="text-light">Anggota Aktif</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-center pt-4">
+            <i style="background: #ffffff3f;" class="bi bi-calendar4 bg-opacity-50 text-light text-center py-3 px-3 rounded-4"></i>
+            <div class="display-1 fw-bold fs-5 text-light mt-4">30+</div>
+            <p class="text-light">Event Tahunan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5">
+      <h3 class="text-center fw-bold">Kegiatan Mendatang</h3>
+      <p class="text-center">Jangan lewatkan event-event menarik yang akan datang</p>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="border d-flex mb-4 p-2 rounded-4 shadow-sm">
+            <div style="font-size: 14px; width: 60px; height: 60px; background: #9000ff;" class=" text-white rounded-4 py-3 px-3 me-3 shadow-sm flex-shrink-0 text-center align-items-center d-flex flex-column justify-content-center">
+              <p class="mb-0 fw-bold">15</p>
+              <p class="mb-0">Feb</p>
+            </div>
+            <div>
+              <h5 style="font-size: 14px;" class="fw-bold m-0">Workshop Web Development</h5>
+              <p style="font-size: 14px;" class="mb-0">Belajar membuat website modern dengan React dan Tailwind CSS</p>
+              <div style="color: #9000ff;" class="d-flex align-items-center">
+                <i class="bi bi-people-fill me-2"></i>
+                <p class="mb-0 small"> 50 Peserta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="border d-flex mb-4 p-2 rounded-4 shadow-sm">
+            <div style="font-size: 14px; width: 60px; height: 60px; background: #9000ff;" class=" text-white rounded-4 py-3 px-3 me-3 shadow-sm flex-shrink-0 text-center align-items-center d-flex flex-column justify-content-center">
+              <p class="mb-0 fw-bold">15</p>
+              <p class="mb-0">Feb</p>
+            </div>
+            <div>
+              <h5 style="font-size: 14px;" class="fw-bold m-0">Workshop Web Development</h5>
+              <p style="font-size: 14px;" class="mb-0">Belajar membuat website modern dengan React dan Tailwind CSS</p>
+              <div style="color: #9000ff;" class="d-flex align-items-center">
+                <i class="bi bi-people-fill me-2"></i>
+                <p class="mb-0 small"> 50 Peserta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="border d-flex mb-4 p-2 rounded-4 shadow-sm">
+            <div style="font-size: 14px; width: 60px; height: 60px; background: #9000ff;" class=" text-white rounded-4 py-3 px-3 me-3 shadow-sm flex-shrink-0 text-center align-items-center d-flex flex-column justify-content-center">
+              <p class="mb-0 fw-bold">15</p>
+              <p class="mb-0">Feb</p>
+            </div>
+            <div>
+              <h5 style="font-size: 14px;" class="fw-bold m-0">Workshop Web Development</h5>
+              <p style="font-size: 14px;" class="mb-0">Belajar membuat website modern dengan React dan Tailwind CSS</p>
+              <div style="color: #9000ff;" class="d-flex align-items-center">
+                <i class="bi bi-people-fill me-2"></i>
+                <p class="mb-0 small"> 50 Peserta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        
+      </div>
   </div>
 
 
