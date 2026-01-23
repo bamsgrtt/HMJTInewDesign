@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020618;
+}
+
+
+.hero {
+    position: relative; /* Ditambahkan agar posisi absolute di dalamnya akurat */
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:  url(image/partikel.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 4; /* Lebih tinggi dari layer-gradient */
+    pointer-events: none;
+    /* Menggunakan blend mode agar partikel menyatu dengan warna di bawahnya */
+    mix-blend-mode: screen; 
+    filter: invert(1) sepia(100%) saturate(500%) hue-rotate(180deg);
+    opacity: 1; /* Mengatur ketajaman partikel tanpa merusak warna gradient */
+}
+
+.hero .circle {
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: screen; 
+    z-index: 3;
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 40% 40%, 
+            rgba(0, 183, 219, 0.2) 5%, /* Ditambah koma */
+            transparent 20%),
+        /* BOLA KANAN (Purple) */
+        radial-gradient(circle at 60% 60%, 
+            rgba(172, 70, 255, 0.2) 5%, /* Ditambah koma */
+            transparent 20%);
+            
+    filter: blur(30px); 
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.hero .layer-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;;
+    background: #020618;
+background: linear-gradient(180deg,rgba(2, 6, 24, 1) 0%, rgba(22, 36, 86, 1) 50%, rgb(39, 2, 65) 100%);
+}
+
+/* Keyframes agar animasi tidak error */
+@keyframes glowPulse {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
+}
+
+.content {
+    position: relative;
+    z-index: 5; /* Pastikan konten di atas semua layer */
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.span-custom {
+    font-size: 48px;
+    background: #00D3F2;
+    background: linear-gradient(90deg,rgba(0, 211, 242, 1) 0%, rgba(43, 127, 255, 1) 50%, rgba(152, 16, 250, 1) 100%);
+     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.span-custom-2 {
+    font-size: 32px;
+    background: #00D3F2;
+    background: linear-gradient(180deg, rgb(0, 211, 242, 1) 0%, rgb(43, 127, 255, 1));
+     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.span-custom-about {
+    font-size: 24px;
+    background: #00D3F2;
+    background: linear-gradient(180deg, rgb(0, 211, 242, 1) 0%, rgb(43, 127, 255, 1));
+     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}s
+.btn-primary {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    background: linear-gradient(#00B8DB 0%, #155DFC 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Gaya dasar untuk tombol */
+.btn-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #8899a6;
+background: linear-gradient(90deg,rgba(0, 184, 219, 0.1) 0%, rgba(43, 127, 255, 0.1) 100%);
+    border: 1px solid #374151;
+    transition: all 0.3s;
+    gap: 5px;
+}
+
+.btn-nav:hover {
+    color: #fff;
+    border-color: #155DFC;
+}
+
+/* Gaya tombol aktif menggunakan teknik border gradien */
+.active-nav {
+    color: #fff;
+    /* Background dalam dan border gradien */
+        background: #00819b75;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px rgba(0, 113, 219, 0.3); /* Efek glow */
+    border: #84abff 1px solid;
+}
+
+/* Gaya untuk kotak konten (Card) */
+/* Gaya untuk kotak konten (Card) */
+.card-custom {
+    position: relative; /* Menjadi patokan posisi untuk ::after */
+    z-index: 1;         /* Mengangkat teks agar tetap di atas cahaya */
+    overflow: hidden;   /* Memastikan cahaya tidak keluar dari border-radius */
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px; 
+    font-size: 14px;
+    width: 100%;
+    max-width: 800px;
+   background: linear-gradient(135deg,rgba(29, 41, 61, 0.4) 0%, rgba(15, 23, 43, 0.4) 100%);
+}
+
+/* Efek Bola Cahaya di Dalam Card */
+.card-custom::after {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at -15% 70%, 
+            rgb(43, 127, 255, 0.1) 30%, 
+            transparent 30%),
+        /* BOLA KANAN (Purple) */
+        radial-gradient(circle at 115% 70%, 
+            rgb(0, 184, 219, 0.1) 30%, 
+            transparent 30%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+/* Animasi agar cahaya terasa "hidup" */
+@keyframes glowPulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Tambahan agar teks di dalam card terbaca jelas */
+.card-body {
+    position: relative;
+    z-index: 2; /* Menjamin teks di atas segalanya */
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #00b8db, #ad46ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+/* Pengurus */
+.pengurus p {
+    font-size: 14px;
+}
+
+.accent {
+
+}
+
+/* Gaya untuk kotak konten (Card) */
+.accent {
+    position: relative; /* Menjadi patokan posisi untuk ::after */
+    z-index: 1;         /* Mengangkat teks agar tetap di atas cahaya */
+    overflow: hidden;   /* Memastikan cahaya tidak keluar dari border-radius */
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px; 
+    font-size: 14px;
+    width: 100%;
+    max-width: 800px;
+   background: linear-gradient(135deg,rgba(29, 41, 61, 0.4) 0%, rgba(15, 23, 43, 0.4) 100%);
+}
+
+/* Efek Bola Cahaya di Dalam Card */
+.accent::after {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at -15% 70%, 
+            rgb(43, 127, 255, 0.1) 30%, 
+            transparent 30%),
+        /* BOLA KANAN (Purple) */
+        radial-gradient(circle at 115% 70%, 
+            rgb(0, 184, 219, 0.1) 30%, 
+            transparent 30%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
