@@ -53,8 +53,7 @@ body {
     inset: 0;
     z-index: 2;
     pointer-events: none;;
-    background: #020618;
-background: linear-gradient(180deg,rgba(2, 6, 24, 1) 0%, rgba(22, 36, 86, 1) 50%, rgb(39, 2, 65) 100%);
+background: linear-gradient(rgba(2, 6, 24, 1) 0%, rgb(15, 24, 57) 50%, rgb(39, 2, 65) 100%);
 }
 
 /* Keyframes agar animasi tidak error */
@@ -75,10 +74,11 @@ background: linear-gradient(180deg,rgba(2, 6, 24, 1) 0%, rgba(22, 36, 86, 1) 50%
 .title {
     font-size: 0.8em;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .span-custom {
-    font-size: 48px;
+    font-size: 80px;
     background: #00D3F2;
     background: linear-gradient(90deg,rgba(0, 211, 242, 1) 0%, rgba(43, 127, 255, 1) 50%, rgba(152, 16, 250, 1) 100%);
      -webkit-background-clip: text;
@@ -106,7 +106,8 @@ background: linear-gradient(180deg,rgba(2, 6, 24, 1) 0%, rgba(22, 36, 86, 1) 50%
     -webkit-text-fill-color: transparent;
     color: transparent;
     font-weight: bold;
-}s
+}
+
 .btn-primary {
     display: inline-block;
     color: white;
@@ -118,6 +119,12 @@ background: linear-gradient(180deg,rgba(2, 6, 24, 1) 0%, rgba(22, 36, 86, 1) 50%
     text-decoration: none;
 }
 
+.btn-secondary {
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
 /* Gaya dasar untuk tombol */
 .btn-nav {
     display: flex;
@@ -234,7 +241,7 @@ background: linear-gradient(90deg,rgba(0, 184, 219, 0.1) 0%, rgba(43, 127, 255, 
 }
 
 /* Efek Bola Cahaya di Dalam Card */
-.accent::after {
+.accent-1::before {
     content: "";        /* Wajib ada agar element muncul */
     position: absolute;
     inset: 0;           /* Memenuhi seluruh area card */
@@ -242,14 +249,139 @@ background: linear-gradient(90deg,rgba(0, 184, 219, 0.1) 0%, rgba(43, 127, 255, 
     
     background: 
         /* BOLA KIRI (Cyan) */
-        radial-gradient(circle at -15% 70%, 
-            rgb(43, 127, 255, 0.1) 30%, 
-            transparent 30%),
-        /* BOLA KANAN (Purple) */
-        radial-gradient(circle at 115% 70%, 
-            rgb(0, 184, 219, 0.1) 30%, 
-            transparent 30%);
+        radial-gradient(circle at 90% 20%, 
+            rgb(43, 127, 255, 0.2) 10%, 
+            transparent 20%);
             
     filter: blur(20px); /* Memberikan efek pendaran halus */
     animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.accent-2::before {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 90% 20%, 
+            rgba(85, 43, 255, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.accent-3::before {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 90% 20%, 
+            rgba(43, 255, 138, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.accent-4::before {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 90% 20%, 
+            rgba(184, 43, 255, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.accent-5::before {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 90% 20%, 
+            rgba(255, 89, 43, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.accent-6::before {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: -1;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 90% 20%, 
+            rgba(255, 43, 43, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+    animation: glowPulse 6s ease-in-out infinite alternate;
+}
+
+.pengurus .col-md-4 i {
+    padding: 12px 14px;
+}
+
+
+/* footer */
+hr {
+
+    border: none; /* Hapus border bawaan browser */
+    height: 1px;  /* Tentukan ketebalan garis */
+    width: 100%;  /* Pastikan garis membentang penuh */
+    
+    /* Gradient: Transparan (Kiri) -> Solid (Tengah) -> Transparan (Kanan) */
+    background: linear-gradient(to right, 
+        rgba(255, 255, 255, 0) 0%,   /* Kiri: Transparan penuh */
+        rgba(208, 222, 255, 0.8) 50%,/* Tepat di Tengah: Paling Jelas */
+        rgba(255, 255, 255, 0) 100%  /* Kanan: Transparan penuh */
+    );
+}
+
+footer .container{
+   position: relative; /* Menjadi patokan posisi untuk ::after */
+    z-index: 1;         /* Mengangkat teks agar tetap di atas cahaya */
+    overflow: hidden;   /* Memastikan cahaya tidak keluar dari border-radius */
+    border-radius: 15px; 
+    font-size: 14px;
+    width: 100%;
+   background: linear-gradient(135deg, rgb(2, 6, 24) 0%, rgba(15, 23, 43, 0.4) 100%); 
+}
+.lapisan {
+    content: "";        /* Wajib ada agar element muncul */
+    position: absolute;
+    inset: 0;           /* Memenuhi seluruh area card */
+    z-index: 2;        /* Menempatkan cahaya di belakang teks */
+    
+    background: 
+        /* BOLA KIRI (Cyan) */
+        radial-gradient(circle at 20% 100%, 
+            rgb(43, 127, 255, 0.2) 10%, 
+            transparent 20%);
+            
+    filter: blur(20px); /* Memberikan efek pendaran halus */
+}
+
+
+footer p, li ,a {
+    font-size: 14px;
 }
